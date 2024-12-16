@@ -7,7 +7,8 @@ import sys
 def main():
     FN = os.path.basename(__file__)[:-2] + 'txt'
     L = open(FN).read().strip().split('\n')
-    HelperTab(L)
+    l = [list(i) for i in L]
+    HelperTab(l)
 
 
 
