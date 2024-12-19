@@ -9,14 +9,14 @@ def main():
     L = open(FN).read().strip().split('\n')
     L = [tuple(map(int, i.split(','))) for i in L]
     
-    # size = 7
-    size = 71
+    size = 7 #example uses 7, actual is 71
+    # size = 71
 
     m = [['.']*size for _ in range(size)]
     HelperTab(m)
 
-    # n = 12
-    n = 1024
+    n = 12 #example is 12 bytes, actual is 1024
+    # n = 1024
     for x,y in L[:n]:
         m[x][y] = '#'
 
