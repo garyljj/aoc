@@ -36,3 +36,12 @@ def Dir8():
         (0,-1),
         (-1,-1),
     )
+
+def Any(*b):
+    for bb in b:
+        if bb:
+            return True
+    return False
+
+def get(m, x, y):
+    return m[x][y]
